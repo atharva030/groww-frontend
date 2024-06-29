@@ -68,7 +68,7 @@ io.on("connection", (socket) => {
         } else {
           socket.emit(`${symbol}`, stock);
         }
-      } catch (error) {
+      } catch (error) {  
         console.error("Error fetching stock data:", error);
       }
     };
